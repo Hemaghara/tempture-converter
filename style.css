@@ -11,17 +11,18 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: #f0f0f0;
 }
 
 /* Container styling for the converter */
 .container {
     height: 370px;
-    width: 520px;
+    width: 90%; /* Changed from fixed width to relative width */
+    max-width: 520px; /* Maximum width for larger screens */
     background-color: rgb(90, 118, 90);
     border: 2px black solid;
     font-family: sans-serif;
-    padding-top: 30px;
-    padding-left: 18px;
+    padding: 30px 18px;
     border-radius: 15px;
 }
 
@@ -57,7 +58,7 @@ h1 {
 /* Styling for input fields */
 input {
     height: 40px;
-    width: 450px;
+    width: 100%; /* Full width for responsiveness */
     border: 2px black solid;
     border-radius: 12px;
     box-shadow: 1px 1px 3px rgb(119, 180, 144);
@@ -75,10 +76,9 @@ input {
 /* Styling for the 'Delete All' button */
 button {
     height: 40px;
-    width: 300px;
+    width: 100%; /* Full width for responsiveness */
     border: 2px black solid;
     margin-top: 30px;
-    margin-left: 100px;
     border-radius: 10px;
     font-size: 20px;
     font-weight: 400;
@@ -92,4 +92,38 @@ button {
 button:hover {
     color: rgb(0, 0, 0);
     background-color: rgb(96, 180, 130);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Styles for small devices like mobile phones */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+}
+
+/* Styles for medium devices like tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    button {
+        font-size: 19px;
+    }
 }
