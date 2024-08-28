@@ -2,47 +2,54 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temperature converter</title>
+    <title>Temperature Converter</title>
+    
+    <!-- Link to custom stylesheet -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Link to Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-
     <div class="container">
         <div class="title">
             <h1>Temperature Converter</h1>
             <span class="Temperature-icon">
+                <!-- Font Awesome icon for temperature -->
                 <i class="fa-solid fa-temperature-low"></i>
             </span>
         </div>
 
+        <!-- Input fields for Celsius, Fahrenheit, and Kelvin -->
         <div class="celsius">
-            <input type="number" placeholder="celsius" name="">
+            <input type="number" placeholder="Celsius" name="">
             <span class="celsius-icon">&#8451</span>
         </div>
 
         <div class="farenheit">
-            <input type="number" placeholder="Farenheit" name="">
+            <input type="number" placeholder="Fahrenheit" name="">
             <span class="farenheit-icon">&#8457</span>
         </div>
-
 
         <div class="kelvin">
             <input type="number" placeholder="Kelvin" name="">
             <span class="kelvin-icon">&#8490</span>
         </div>
 
+        <!-- Button to clear all input fields -->
         <div class="button">
             <button>DELETE ALL</button>
         </div>
     </div>
 </body>
+
+<!-- Link to JavaScript file -->
 <script src="script.js"></script>
 
 </html>

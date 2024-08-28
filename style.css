@@ -1,55 +1,61 @@
-*{
+/* General style reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+/* Body style for centering content */
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-.container{
+/* Container styling for the converter */
+.container {
     height: 370px;
     width: 520px;
     background-color: rgb(90, 118, 90);
     border: 2px black solid;
-font-family: sans-serif;
-padding-top: 30px;
-padding-left: 18px;
-border-radius: 15px;
+    font-family: sans-serif;
+    padding-top: 30px;
+    padding-left: 18px;
+    border-radius: 15px;
 }
 
-.title{
+/* Title section styling */
+.title {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.Temperature-icon{
+/* Icon styling for temperature icon */
+.Temperature-icon {
     font-size: 25px;
     color: white;
-
 }
 
-h1{
-    color:white;
+/* Styling for the main title */
+h1 {
+    color: white;
     letter-spacing: 1.2px;
     font-size: 33px;
 }
 
-.celsius,.farenheit,.kelvin{
+/* Styling for input field sections */
+.celsius, .farenheit, .kelvin {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:30px;
-   
+    margin-top: 30px;
 }
 
-input{
+/* Styling for input fields */
+input {
     height: 40px;
     width: 450px;
     border: 2px black solid;
@@ -59,13 +65,15 @@ input{
     cursor: pointer;
 }
 
-.celsius-icon,.farenheit-icon,.kelvin-icon{
+/* Styling for input field icons */
+.celsius-icon, .farenheit-icon, .kelvin-icon {
     font-size: 25px;
     color: white;
-padding-left:5px;
+    padding-left: 5px;
 }
 
-button{
+/* Styling for the 'Delete All' button */
+button {
     height: 40px;
     width: 300px;
     border: 2px black solid;
@@ -80,7 +88,8 @@ button{
     transition-delay: 0.1s;
 }
 
-button:hover{
+/* Hover effect for the button */
+button:hover {
     color: rgb(0, 0, 0);
-    background-color:rgb(96, 180, 130);
+    background-color: rgb(96, 180, 130);
 }
